@@ -14,6 +14,7 @@ db = pymysql.connect(
     password="testpass",
     host="db",
     database="challenge",
+    local_infile="challenge"
 )
 
 
