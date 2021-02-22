@@ -44,5 +44,3 @@ def load_movielens():
                     ' fields terminated by \',\' IGNORE 1 LINES'.format(
                     os.path.join(TMP_DIR, filename), table_name)
                 cur.execute(s)
-
-                cur.execute('SELECT * FROM {} LIMIT 10'.format(table_name))
