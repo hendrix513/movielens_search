@@ -22,11 +22,6 @@ db = pymysql.connect(
 The application can
 support basic keyword queries, and support filtering such as by user id/name,
 movie id/name, and movie tags
-
-CREATE TABLE links(movieId INT, imdbId INT, tmdbId INT);
-CREATE TABLE tags(userId INT, movieId INT, tag VARCHAR(200), timestamp INT);
-CREATE TABLE ratings(userId INT, movieId INT, rating INT, timestamp INT);
-CREATE TABLE movies(movieId INT, title VARCHAR(200), genres VARCHAR(200));
 '''
 @app.route("/search_movies")
 def search_movies():
